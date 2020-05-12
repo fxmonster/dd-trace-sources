@@ -117,4 +117,4 @@ require __DIR__ . '/../src/DDTrace/StartSpanOptions.php';
 // Custom integrations
 require __DIR__ . '/../src/DDTrace/Integrations/Redis/RedisIntegration.php';
 require __DIR__ . '/../src/DDTrace/Integrations/Phalcon/PhalconIntegration.php';
-
+require __DIR__ . '/../src/DDTrace/Integrations/SCCS/SccsIntegration.php';

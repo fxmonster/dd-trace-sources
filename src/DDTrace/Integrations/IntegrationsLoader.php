@@ -39,6 +39,7 @@ use DDTrace\Log\LoggingTrait;
 // custom integrations
 use DDTrace\Integrations\Redis\RedisIntegration;
 use DDTrace\Integrations\Phalcon\PhalconIntegration;
+use DDTrace\Integrations\SCCS\SccsIntegration;
 
 /**
  * Loader for all integrations currently enabled.
@@ -78,9 +79,11 @@ class IntegrationsLoader
         WebIntegration::NAME => '\DDTrace\Integrations\Web\WebIntegration',
         ZendFrameworkIntegration::NAME => '\DDTrace\Integrations\ZendFramework\ZendFrameworkIntegration',
 
-
+// custom Integrations
         RedisIntegration::NAME => '\DDTrace\Integrations\Redis\RedisIntegration',
         PhalconIntegration::NAME => '\DDTrace\Integrations\Phalcon\PhalconIntegration',
+        SccsIntegration::NAME => '\DDTrace\Integrations\SCCS\SccsIntegration',
+
     ];
 
     /**
