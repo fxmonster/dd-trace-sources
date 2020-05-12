@@ -113,3 +113,8 @@ require __DIR__ . '/../src/DDTrace/Log/ErrorLogLogger.php';
 require __DIR__ . '/../src/DDTrace/Obfuscation.php';
 require __DIR__ . '/../src/DDTrace/Format.php';
 require __DIR__ . '/../src/DDTrace/StartSpanOptions.php';
+
+// Custom integrations
+require __DIR__ . '/../src/DDTrace/Integrations/Redis/RedisIntegration.php';
+require __DIR__ . '/../src/DDTrace/Integrations/Phalcon/PhalconIntegration.php';
+
