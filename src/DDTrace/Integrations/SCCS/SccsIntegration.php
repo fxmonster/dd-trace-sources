@@ -49,7 +49,7 @@ class SccsIntegration extends Integration
     public static function load()
     {
 
-        dd_trace('SCCS', 'sendBySocket', function () {
+        dd_trace('App\SCCS', 'sendBySocket', function () {
             $args = func_get_args();
             return SccsIntegration::traceCommand($this, 'sendBySocket', $args);
         });
@@ -72,7 +72,6 @@ class SccsIntegration extends Integration
         );
 
         $span = $scope->getSpan();
-        $span->setTag(Tag::SPAN_TYPE, Type::CUSTOM);
         $span->setTag(Tag::SERVICE_NAME, 'sccs');
         $span->setTag('sccs.method', $command);
 
